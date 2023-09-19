@@ -1,0 +1,285 @@
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!---------------|     FEITO POR DAVID BEN      | --------------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="netflix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <title>Netflix - Brasil</title>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <div>
+                <select name="role" id="language">
+                    <label for="">
+                    <option value="opcao1">Português</option>
+                    <option value="opcao2">English</option>
+                </label>
+                </select>
+                <a href="menu\signin.html"><button>Entrar</button></a>
+            </div>
+        </nav>
+        <div class="header-content">
+            <h1>
+                Divirta-se com filmes épicos, séries e sucesso e mais!
+            </h1>
+            <h3>
+                <span class="text-red">Assine</span> hoje, cancele quando quiser<span class="text-red">!</span>
+            </h3>
+            <p id="animation">
+                Wuer assistir? Inorme 
+            </p>
+            <form class="email-signup" method="get">
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Vamos Lá</button>
+            </form>
+
+        </div>
+    </div> 
+
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2 id="texto1"><span class="text-red">Aproveite</span> na TV<span class="text-red">!</span></h2>
+                <p id="example">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+            </div>
+            <div class="img-col">
+                <img src="images/feature-1.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="row">
+            <div class="img-col">
+                <img src="images/feature-3.png" alt="">
+            </div>
+            <div class="text-col">
+                <h2 id="texto2"><span class="text-red">Assista </span>onde quiser<span class="text-red">!</span></h2>
+                <p>Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV.</p>
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2 id="texto3"><span class="text-red">Crie</span> perfis para crianças<span class="text-red">!</span></h2>
+                <p>Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, 
+                sem pagar a mais por isso.</p>
+            </div> 
+            <div class="img-col">
+                <img src="images/feature-4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="features">
+        <div class="row">
+            <div class="img-col">
+                <img src="images/feature-2.png" alt="">
+            </div>
+            <div class="text-col">
+                <h2 id="texto4"><span class="text-red">Baixe</span> séries para assistir offline<span class="text-red">!</span></h2>
+                <p>Disponíveis somente em <u id="line-red">Planos sem Anúncios</u>.</p>
+            </div>
+        </div>
+    </div>
+    <center>
+    <div class="quest">
+        <h2>
+            <span class="text-red">P</span>erguntas 
+            <span class="text-red">F</span>requentes<span class="text-red">.</span>
+        </h2>
+        <ul class="acordeon">
+            <li>
+                <input type="radio" name="acordeon" onchange="aoSelecionarInput(event)" id="q1">
+                <label for="q1">O que é a Netflix<span class="text-red">?</span></label>
+                <div class="content">
+                    <p>A <span class="text-red">N</span>etflix é um serviço de streaming que oferece uma ampla variedade de 
+                        séries, filmes e documentários premiados em milhares de aparelhos conectados à internet<span class="text-red">.</span>
+                        </p>
+                        <p>
+                            Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por 
+                            um preço mensal acessível<span class="text-red">.</span> Aqui você sempre encontra novidades. A cada semana, 
+                            adicionamos novas séries e filmes<span class="text-red">.</span>
+                        </p>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="acordeon">
+            <li>
+                <input type="radio" name="acordeon" onchange="aoSelecionarInput(event)" id="q2">
+                <label for="q2">Quanto custa a Netflix<span class="text-red">?</span></label>
+                <div class="content">
+                <p>
+                    Assista à <span class="text-red">N</span>etflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por 
+                    uma taxa mensal única<span class="text-red">.</span> Os planos variam de R$18,90 a R$55,90 por mês<span class="text-red">.</span>
+                    <u id="line-red">Sem contrato nem taxas extras</u><span class="text-red">.</span>
+                </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="acordeon">
+            <li>
+                <input type="radio" name="acordeon" onchange="aoSelecionarInput(event)" id="q3">
+                <label for="q3">Onde posso assistir<span class="text-red">?</span></label>
+                <div class="content">
+                <p>
+                    Assista onde quiser, quando quiser<span class="text-red">.</span> Faça login com sua conta <span class="text-red">N</span>etflix em netflix.com para começar a 
+                    assistir no computador ou em qualquer aparelho conectado à Internet compatível com o aplicativo <span class="text-red">N</span>etflix, 
+                    como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames<span class="text-red">.</span>
+                </p>
+                <p>
+                    Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou Windows 10. Use 
+                    downloads para levar a <span class="text-red">N</span>etflix para onde quiser sem precisar de conexão com a Internet<span class="text-red">.</span> Leve a Netflix com você 
+                    para qualquer lugar<span class="text-red">.</span>
+                </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="acordeon">
+            <li>
+                <input type="radio" name="acordeon" onchange="aoSelecionarInput(event)" id="q4">
+                <label for="q4">Como faço para cancelar<span class="text-red">?</span></label>
+                <div class="content">
+                <p>
+                    A <span class="text-red">N</span>etflix é flexível<span class="text-red">.</span>
+                    Não há contratos nem compromissos<span class="text-red">.</span> Você pode cancelar a sua conta na internet com apenas dois 
+                    cliques<span class="text-red">.</span> Não há taxa de cancelamento <span class="text-red">-</span> você pode começar ou encerrar a sua assinatura a qualquer momento<span class="text-red">.</span>
+                </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="acordeon">
+            <li>
+                <input type="radio" name="acordeon" onchange="aoSelecionarInput(event)" id="q5">
+                <label for="q5">O que eu posso assistir na Netflix<span class="text-red">?</span></label>
+                <div class="content">
+                <p>
+                    A <span class="text-red">N</span>etflix tem um grande catálogo de <u id="line-red">filmes, documentários, séries, originais Netflix</u> premiados e muito mais<span class="text-red">.</span>
+                    Assista o quanto quiser<span class="text-red">,</span> quando quiser<span class="text-red">.</span>
+                </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="acordeon">
+            <li>
+                <input type="radio" name="acordeon" onchange="aoSelecionarInput(event)" id="q6">
+                <label for="q6">A Netflix é adequada para crianças<span class="text-red">?</span></label>
+                <div class="content">
+                <p>
+                    A experiência infantil da <span class="text-red">N</span>etflix <u id="line-red">faz parte da sua assinatura</u> para que as crianças se divirtam 
+                    em seu próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis<span class="text-red">.</span>
+                </p>
+                <p>
+                    O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite restringir a 
+                    classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam<span class="text-red">.</span>
+                </p> 
+                </div>
+            </li>
+        </ul>
+
+    </center>
+
+        <!----- RODAPÉ ----->
+
+        <footer>
+            <div id="footer-content">
+                <div id="footer-contatos">
+                
+                    <h1><span class="text-red">D</span>avid <span class="text-red">B</span>en<span class="text-red">.</span> </h1>
+                    <p>
+                        <span id="i-instagram">M</span>inhas 
+                        <span id="f-facebook">R</span>edes 
+                        <span id="w-whatsapp">S</span>ociais:</p>
+
+                    <div id="footer-social_media">
+                        <a href="https://www.instagram.com/davidben_48/" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://web.facebook.com/davidsaxofonista.432?locale=pt_BR" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                
+                <ul class="footer-list" id="links">
+                    <li>
+                        <h3><u id="line-red">Foco do Projeto</u>:</h3>
+                    </li>
+                    <li>
+                        <span class="text-red">Mostrar</span> minhas habilidades <br> com <span id="html-orange">HTML5</span> semântico<span class="text-red"> ;</span>
+                    </li>
+                    <li>
+                        <span class="text-red">Habilidade</span> com cores e <br> estilização no <span id="css-blue">CSS3</span> <span class="text-red">;</span>
+                    </li>
+                    <li>
+                        <span class="text-red">Usabilidade</span> de <span id="js-yellow">JavaScript</span>.
+                    </li>
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <h3>
+                            <u id="line-red">Conhecimentos</u>:
+                        </h3>
+                    </li>
+                    <li>
+                        <span class="text-red">Front-End</span>: HTML5, CSS3, JS,<br>
+                        React e Typescript <span class="text-red">;</span>
+                    </li>
+                    <li>
+                        <span class="text-red">Back-End</span>: NodeJS, .NET/C#, <br>
+                        SQL e Java <span class="text-red">;</span> 
+                    </li>
+                    <li>
+                        <span class="text-red">Cloud</span>: Microsoft Azure<span class="text-red">.</span>
+                    </li>
+                </ul>
+                <div id="footer-subscrite">
+                    <h3>Email</h3>
+                    <p>
+                        Se deseja entrar em contato por email, basta clicar no ícone abaixo.
+                    </p>
+    
+                    <div id="input-gp">
+                        <input type="email" id="email">
+                        <button title="Clique aqui e envie um e-mail">
+                            <a href=mailto:davidbensaxofonista@gmail.com?subject="link HTML">
+                                <i id="email-icon" class="fa-regular fa-envelope"></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div id="copyright">
+                    &#169 
+                    2023 <span class="text-red">|</span> Todos os Direitos Reservados <span class="text-red">|</span>
+                </div>
+            </div>
+            
+
+        </footer>
+
+
+    <script src="js/netflix.js"></script>
+</body>
+
+</html>
+
+
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!---------------|     FEITO POR DAVID BEN      | --------------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->

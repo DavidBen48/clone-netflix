@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* 
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!---------------|     FEITO POR DAVID BEN      | --------------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+*/
+
+
+        /* SEÇÃO INICIAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+    
+}
+
+
+
+.header{
+    width: 100%;
+    height: 700px; 
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%,
+                                    rgba(0, 0, 0, 0.7) 40%, rgba(0,0,0,0.5) 70%, 
+                    rgba(0, 0, 0, 0.75) 100%), url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px 8%;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header-content h1{
+    margin-bottom: 20px;
+    line-height: 55px;
+    display: flex;
+    font-size: 2.7rem;
+    font-weight: 800;
+    max-width: 750px;
+}
+
+.header-content h3{
+    margin: 20px; 
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.header-content p{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+/* LOGO - NETFLIX */
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+/* -------------- */
+
+#language{
+    padding-right: 0.75rem;
+    padding-left: 1rem;
+    padding-bottom: 0.375rem;
+    padding-top: 0.375rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    font-size: medium;
+    color: black;
+    background-image: linear-gradient(
+        to top, rgba(255, 255, 255, 0.2)0%, rgba(255, 255, 255, 0.2) 74%, rgba(248, 115, 115, 0.336) 100%
+    );
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* BOTÃO DE ENTRAR */
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 6.2px 24px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+/*-----------------*/
+
+.email-signup {
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.email-signup input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.email-signup button {
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
+
+        /* .TEXT-RED --- PALAVRAS EM VERMELHO*/
+        /* .LINE-RED --- SUBLINHAR EM VERMELHO */
+        /* TEXTOS EDITADOS INDIVIDUALMENTE */
+        /* EDIÇÃO DE PALAVRAS/ITENS ESPECÍFICOS */
+
+.text-red {
+    color: #db0001;
+} 
+
+#line-red {
+    text-decoration-color: #db0001;
+}
+
+#texto1 {
+    font-size: 49px;
+}
+
+#texto2 {
+    font-size: 39px;
+}
+
+#texto3 {
+    font-size: 45px;
+}
+
+#texto4 {
+    font-size: 47px;
+}
+
+#js-yellow {
+    color: #eeff07;
+}
+
+#i-instagram {
+    color: #ff008c;
+}
+
+#f-facebook {
+    color: blue;
+}
+
+
+#w-whatsapp {
+    color: #09ff00
+}
+
+#css-blue {
+    color: #3b3dc0;
+}
+
+#html-orange {
+    color: #ffa807;
+}
+
+#email-icon {
+    color: #fff;
+}
+
+            /* ------------------------------ */
+            /* ------------------------------ */
+
+
+            /* CARACTERÍSTICAS - FEATURES */
+
+
+.features {
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+/* PERGUNTAS FREQUENTES */
+
+.quest {
+    padding: 20px 25%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.quest h2 {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.acordeon {
+    margin: 30px;
+    width: 100%;
+    max-width: 750px;
+}
+
+.acordeon li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.acordeon li label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 23px 15px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: "+"; 
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 1s;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+.acordeon .content {
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s, padding 0.5s ;
+}
+
+.acordeon input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.acordeon input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.quest .email-signup {
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+            /* ------------------------------ */
+            /* ----------| FOOTER |---------- */
+            /* ------------------------------ */
+
+:root {
+    --color-neutral-0: #0c0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+#footer-content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 1.35rem;
+}
+
+#footer-contatos h1 {
+margin-bottom: 0.75em;
+}
+
+#footer-social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: .8rem;
+}
+
+#footer-social_media .footer-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    color:var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer-social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#whatsapp {
+    background: linear-gradient(rgb(0, 235, 0), rgb(0, 114, 0), rgb(0, 56, 0)) ;
+}
+
+#facebook {
+    background: linear-gradient(blue, rgb(0, 0, 153), rgb(0, 0, 94));
+}
+
+.footer-list {
+    display: flex;
+    gap: 0.75rem;
+    flex-direction: column;
+    list-style: none;
+}
+
+.footer-list h3 {
+    font-size: 22px;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+.footer-link .footer-link:hover {
+    color: #7f37c9; 
+}
+
+#footer-subscrite {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer-subscrite p {
+    color: var(--color-neutral-30);
+}
+
+#input-gp {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    border-radius: 4px;
+}
+
+#input-gp input {
+    display: flex;
+    padding: .75rem;
+    width: 100%;
+    border-radius: 3px;
+}
+
+#input-gp button {
+    background-color: #db0001;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 9.5px 1.25rem;
+    font-size: 1.125rem;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+
+#input-gp button:hover {
+    opacity: 0.5;
+    transition: .4s ease;
+}
+
+        /* RESPONSIVIDADE */ 
+@media only screen and (max-width: 800px) {
+
+    .logo {
+        width: 100px;
+    }
+    nav button {
+        padding: 5px 10px;
+    }
+    div #languade {
+        padding: 4px 8px;
+    }
+    .header-content {
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .header-content h1 {
+        font-size: 35px;
+    }
+    .email-signup {
+        font-size: 12px;
+        padding: 1px;
+    }
+    .text-col, .img-col {
+        flex-basis: 100%;
+    }
+    .features h2 {
+        font-size: 28px;
+    }
+    .features p {
+        font-size: 20px;
+    }
+    .row:nth-child(2), .row:nth-child(4) {
+    flex-direction: column-reverse;
+    }
+    .features .row {
+    padding: 10px 0;
+    }
+    .acordeon .content {
+        font-size: 18px;
+    }
+    .quest h2 {
+        font-size: 30px;
+    }
+    .acordeon .content {
+        font-size: 18px;
+    }
+    .acordeon li label {
+        border-radius: 3px;
+        padding: 15px;
+        font-size: 16px;
+    }
+    label::after {
+        font-size: 22px;
+    }
+    #footer-content {
+        width: 100%;
+        height: 90%;
+        gap: 1rem;
+        align-content: center;
+    }
+    #footer-content #footer-contatos h1 {
+        font-size: 25px;
+    }
+    #footer-content #footer-contatos p {
+        font-size: 20px;
+    }
+    #footer-social_media {
+        gap: 1em;
+    }
+    .footer-list h3 {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+/*
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!---------------|     FEITO POR DAVID BEN      | --------------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+<!------- © 2023 | Todos os Direitos Reservados | © 2023 -------->
+*/
