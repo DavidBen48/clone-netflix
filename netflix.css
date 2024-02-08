@@ -145,12 +145,6 @@ nav button{
     padding: 15px 30px;
 }
 
-
-        /* .TEXT-RED --- PALAVRAS EM VERMELHO*/
-        /* .LINE-RED --- SUBLINHAR EM VERMELHO */
-        /* TEXTOS EDITADOS INDIVIDUALMENTE */
-        /* EDIÇÃO DE PALAVRAS/ITENS ESPECÍFICOS */
-
 .text-red {
     color: #db0001;
 } 
@@ -158,57 +152,10 @@ nav button{
 #line-red {
     text-decoration-color: #db0001;
 }
-
-#texto1 {
-    font-size: 49px;
-}
-
-#texto2 {
-    font-size: 39px;
-}
-
-#texto3 {
-    font-size: 45px;
-}
-
-#texto4 {
-    font-size: 47px;
-}
-
-#js-yellow {
-    color: #eeff07;
-}
-
-#i-instagram {
-    color: #ff008c;
-}
-
-#f-facebook {
-    color: blue;
-}
-
-
-#w-whatsapp {
-    color: #09ff00
-}
-
-#css-blue {
-    color: #3b3dc0;
-}
-
-#html-orange {
-    color: #ffa807;
-}
-
 #email-icon {
     color: #fff;
 }
-
-            /* ------------------------------ */
-            /* ------------------------------ */
-
-
-            /* CARACTERÍSTICAS - FEATURES */
+            /* - FEATURES */
 
 
 .features {
@@ -220,9 +167,10 @@ nav button{
     display: flex;
     width: 100%;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     padding: 50px 0;
 }
+
 
 .text-col {
     flex-basis: 50%;
@@ -250,7 +198,8 @@ nav button{
 /* PERGUNTAS FREQUENTES */
 
 .quest {
-    padding: 20px 25%;
+    padding: 0 8%;
+    margin-bottom: 10%;
     text-align: center;
     font-size: 18px;
 }
@@ -261,9 +210,8 @@ nav button{
 }
 
 .acordeon {
-    margin: 30px;
+    margin: 0;
     width: 100%;
-    max-width: 750px;
 }
 
 .acordeon li {
@@ -333,73 +281,55 @@ input[type="radio"] {
 }
 
 footer {
+    padding: 2% 40px;
     width: 100%;
     color: var(--color-neutral-40);
+    background-color: var(--color-neutral-10);
+}
+
+
+.links-footer a{
+    text-decoration: none;
+    gap: 5%;
+}
+
+.link-footer {
+    color: #FFF;
+    font-size: 30px;
+    transition: .5s ease;
+}
+
+.link-footer:hover {
+    color: #ff0000;
+}
+
+.footer-message {
+    display: block;
 }
 
 #footer-content {
-    background-color: var(--color-neutral-10);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 1rem 1.35rem;
+    gap: 10%;
+
 }
 
 #footer-contatos h1 {
 margin-bottom: 0.75em;
 }
 
-#footer-social_media {
+.links-footer {
     display: flex;
-    gap: 2rem;
-    margin-top: .8rem;
+    gap: 8%;
 }
 
-#footer-social_media .footer-link {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 2rem;
-    color:var(--color-neutral-40);
-    border-radius: 50%;
-    transition: all 0.4s;
-}
-
-#footer-social_media .footer-link:hover {
-    opacity: 0.8;
-}
-
-#instagram {
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
-}
-
-#whatsapp {
-    background: linear-gradient(rgb(0, 235, 0), rgb(0, 114, 0), rgb(0, 56, 0)) ;
-}
-
-#facebook {
-    background: linear-gradient(blue, rgb(0, 0, 153), rgb(0, 0, 94));
-}
 
 .footer-list {
     display: flex;
     gap: 0.75rem;
     flex-direction: column;
     list-style: none;
-}
-
-.footer-list h3 {
-    font-size: 22px;
-}
-
-.footer-list .footer-link {
-    color: var(--color-neutral-30);
-    transition: all 0.4s;
-}
-
-.footer-link .footer-link:hover {
-    color: #7f37c9; 
 }
 
 #footer-subscrite {
@@ -441,6 +371,7 @@ margin-bottom: 0.75em;
     transition: .4s ease;
 }
 
+
         /* RESPONSIVIDADE */ 
 @media only screen and (max-width: 800px) {
 
@@ -452,6 +383,12 @@ margin-bottom: 0.75em;
     }
     div #languade {
         padding: 4px 8px;
+    }
+    article {
+        margin-top: 1rem;
+    }
+    .email-signup {
+        display: none;
     }
     .header-content {
         position: unset;
@@ -474,14 +411,15 @@ margin-bottom: 0.75em;
     .features p {
         font-size: 20px;
     }
-    .row:nth-child(2), .row:nth-child(4) {
-    flex-direction: column-reverse;
-    }
     .features .row {
     padding: 10px 0;
     }
     .acordeon .content {
         font-size: 18px;
+    }
+    .row-verse {
+        display: block;
+        flex-wrap: nowrap;
     }
     .quest h2 {
         font-size: 30px;
@@ -498,22 +436,17 @@ margin-bottom: 0.75em;
         font-size: 22px;
     }
     #footer-content {
+        display: block;
+        padding: 5% 10px;
         width: 100%;
         height: 90%;
-        gap: 1rem;
         align-content: center;
-    }
-    #footer-content #footer-contatos h1 {
-        font-size: 25px;
-    }
-    #footer-content #footer-contatos p {
-        font-size: 20px;
-    }
-    #footer-social_media {
-        gap: 1em;
     }
     .footer-list h3 {
         font-size: 18px;
+    }
+    .footer-message {
+        margin-bottom: 10%;
     }
 }
 
