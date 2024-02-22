@@ -83,7 +83,7 @@ body{
     display: inline-flex;
     align-items: center;
     border-radius: 3px;
-    border: 5px solid transparent;
+    border: 5px solid transparent; 
     font-size: medium;
     color: black;
 }
@@ -363,11 +363,12 @@ margin-bottom: 0.75em;
     font-size: 1.125rem;
     border-radius: 0px 4px 4px 0px;
     cursor: pointer;
+    transition: .4s ease;
+
 }
 
 #input-gp button:hover {
-    opacity: 0.5;
-    transition: .4s ease;
+    opacity: 0.8;
 }
 
 
